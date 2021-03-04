@@ -11,9 +11,8 @@
     <tr>
       <th><%= book.title %></th>
       <th><%= book.body %></th>
-      <th>Show</th>
-      <th>Edit</th>
-      <th>Destroy</th>
+      <th><%= link_to "Show",book_path(book.id) %></th>
+      <th><%= link_to "Edit",edit_book_path(book.id) %></th>
     </tr>
     <% end %>
   </tbody>
